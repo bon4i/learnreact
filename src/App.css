@@ -7,36 +7,6 @@
   "header header"
   "aside content";
 }
-
-.header {
-  grid-area: header;
-  background-color: #1b83f2;
-  margin: 0px 0px 10px 0px;
-}
-.header img {
-  height: 40px;
-}
-.aside {
-  grid-area: aside;
-  background-color: #1b83f2;
-  margin: 0px 10px 0px 0px;
-}
-.content {
-  grid-area: content;
-}
-.description-user {
-  display: flex;
-  justify-content: start;
-  margin: 20px 0px 0px 0px;
-  border: 1px grey solid;
-}
-.description {
-  margin: 0px 0px 0px 20px;
-}
-.description-user img {
-  height: 100px;
-}
-.background-user img{
-  height: 250px;
-  width: 1062px;
+.app-wrapper-content {
+    grid-area: content;
 }

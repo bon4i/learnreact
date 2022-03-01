@@ -1,0 +1,17 @@
+.description_user {
+   display: flex;
+   justify-content: start;
+   margin: 20px 0px 0px 0px;
+   border: 1px grey solid;
+ }
+ .description {
+   margin: 0px 0px 0px 20px;
+ }
+ .description_user img {
+   height: 100px;
+ }
+ .background_user {
+   height: 250px;
+   width: 1242px;
+   background-color: rgb(99, 97, 240);
+ }

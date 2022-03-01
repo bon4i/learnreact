@@ -1,0 +1,19 @@
+ .item {
+   color: white;
+   text-transform: uppercase;
+   width: 400px;
+   height: 40px;
+   background-color: grey;
+   margin-bottom: 10px;
+ }
+
+ span {
+  margin-left: 200px;
+ }
+ .postAvatar {
+   background-color: blueviolet;
+   padding-left: 100px;
+   border-radius: 50%;
+   width: 70px;
+   height: 70px;
+ }

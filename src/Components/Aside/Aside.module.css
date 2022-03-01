@@ -1,0 +1,13 @@
+.aside {
+   grid-area: aside;
+   background-color: #1b83f2;
+   margin: 0px 10px 0px 0px;
+   padding: 5px 0px 0px 10px;
+ }
+ .item a {
+  color:gold;
+ }
+
+ .item a.active {
+  color:gold;
+ }
