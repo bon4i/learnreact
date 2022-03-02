@@ -21,6 +21,16 @@
       {id: 4,message: 'Как погода?'}
     ]
  }
-  }
+  };
+
+export let addPost = (postMessage) => {
+  let newPost = {
+    id: 5,
+    message: 'Yo Yo Yo',
+    likesCount: 21
+  };
+
+  state.profilePage.posts.push(newPost);
+}
 
  export default state;

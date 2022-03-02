@@ -5,6 +5,13 @@ const MyPosts = (props) => {
   
   let postsElements = props.posts.map (post => <Post message={post.message} likesCount={post.likesCount} id={post.id}/>)
 
+  let newPostElement = React.useRef();
+
+  let addPost = () => {
+    let text = newPostElement.current.value;
+    alert (text);
+  }
+
   return (
     <div className={classes.content}>
 
@@ -12,8 +19,8 @@ const MyPosts = (props) => {
 
       <div className={classes.new_posts}>
         <div className={classes.new_posts}>Новая запись</div>
-        <div><textarea className={classes.textArea} value={"Введите текст..."}></textarea></div>
-        <button className={classes.sendPost}>Отправить</button>
+        <div><textarea className={classes.textArea} ref={newPostElement}></textarea></div>
+        <button className={classes.sendPost} onClick={addPost}>Отправить</button>
       </div>
 
       <div className={classes.posts}>{postsElements}</div>

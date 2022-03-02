@@ -5,7 +5,7 @@
    width: 400px;
    height: 100px;
    margin-bottom: 10px;
-   background-color: rgb(125, 172, 214);
+   border: 1px solid black;
  }
 
  span {
