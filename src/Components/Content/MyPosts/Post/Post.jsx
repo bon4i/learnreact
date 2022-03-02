@@ -2,14 +2,12 @@ import React from "react";
 import classes from "./Post.module.css";
 const Post = (props) => {
   return (
-
     <div className={classes.item}>
       <div className={classes.postAvatar}></div>
-      {props.message}
+      <div className={classes.postMessage}>{props.message}</div>
       <span>Like:</span>
       {props.likesCount}
     </div>     
-    
 
   );
 };

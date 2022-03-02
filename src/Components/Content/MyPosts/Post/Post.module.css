@@ -1,19 +1,24 @@
  .item {
-   color: white;
+   padding: 20px 0px 20px 0px;
+   color: black;
    text-transform: uppercase;
    width: 400px;
-   height: 40px;
-   background-color: grey;
+   height: 100px;
    margin-bottom: 10px;
+   background-color: rgb(125, 172, 214);
  }
 
  span {
   margin-left: 200px;
  }
+ .postMessage{
+   padding-left: 120px;
+ }
  .postAvatar {
+   padding-top: 20px;
    background-color: blueviolet;
    padding-left: 100px;
-   border-radius: 50%;
-   width: 70px;
-   height: 70px;
+   border-radius: 50px;
+   width: 10px;
+   height: 40px;
  }
