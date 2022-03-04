@@ -9,7 +9,7 @@ const Content = (props) => {
          <ProfileInfo/>
          <MyPosts posts={props.profilePage.posts}
                   newPostText={props.profilePage.newPostText}
-                  updateNewPostText={props.profilePage.updateNewPostText} 
+                  updateNewPostText={props.updateNewPostText} 
                   addPost={props.addPost}
                   />
                   
