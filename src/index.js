@@ -6,20 +6,20 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 
-let _callSubscriber = (state) => {
+let rerenderEntireTree = (state) => {
     ReactDOM.render(
       <React.StrictMode>
         <BrowserRouter>
-          <App state={store.getState()} addPost={store.addPost.bind(store)} updateNewPostText={store.updateNewPostText.bind(store)}/>
+          <App state={store.getState()} dispatch={store.dispatch.bind(store)}/>
         </BrowserRouter>
       </React.StrictMode>,
       document.getElementById('root')
     );
 }
 
-_callSubscriber (store.getState);
+rerenderEntireTree(store.getState);
 
-store.subscribe(_callSubscriber);
+store.subscribe(rerenderEntireTree);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
