@@ -26,6 +26,7 @@ const Dialogs = (props) => {
 
 
    let onSendMessageClick = () => {
+      debugger;
       props.store.dispatch(sendMessageCreator);
    };
 
