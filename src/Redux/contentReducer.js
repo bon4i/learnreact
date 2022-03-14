@@ -1,7 +1,14 @@
 const ADD_POST = 'ADD-POST';
 const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
 
-   const contentReducer = (state, action) => {
+let initialState = {
+   newPostText: 'Привет',
+        posts: [
+          {message:'Изучаю реакт', likesCount: 12, id:1},
+          {message:'Скоро научусь', likesCount: 4, id:2}
+        ]
+};
+const contentReducer = (state = initialState, action) => {
       switch(action.type) {
          case ADD_POST:
             let newPost = {
@@ -20,5 +27,6 @@ const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
       }
 
    }
-
+export const addPostActionCreator = () => ({type: ADD_POST}); 
+export const updateNewPostTextActionCreator = (text) => ({type: UPDATE_NEW_POST_TEXT, newText: text});  
 export default contentReducer;
